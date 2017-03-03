@@ -1,0 +1,28 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: "Access Key"|t('ses'),
+    instructions: "You can find this in your Amazon Developer Console."|t('ses'),
+    id: 'accessKey',
+    name: 'accessKey',
+    value: adapter.accessKey,
+    errors: adapter.getErrors('accessKey')
+}) }}
+
+{{ forms.textField({
+    label: "Secret Key"|t('ses'),
+    instructions: "You can find this in your Amazon Developer Console."|t('ses'),
+    id: 'secretKey',
+    name: 'secretKey',
+    value: adapter.secretKey,
+    errors: adapter.getErrors('secretKey')
+}) }}
+
+{{ forms.textField({
+    label: "Region"|t('ses'),
+    instructions: "You can find this in your Amazon Developer Console."|t('ses'),
+    id: 'region',
+    name: 'region',
+    value: adapter.region,
+    errors: adapter.getErrors('region')
+}) }}

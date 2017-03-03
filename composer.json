@@ -1,0 +1,39 @@
+{
+    "name": "borucreative/craft3-ses",
+    "description": "A CraftCMS v3 Mail Transport strategy using Amazon SES",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craftcms",
+        "craft-plugin",
+        "amazon ses"
+    ],
+    "support": {
+        "docs": "https://www.github.com/borucreative/craft3-ses",
+        "issues": "https://www.github.com/borucreative/craft3-ses/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Boru Creative",
+            "homepage": "https://www.borucreative.com"
+        }
+    ],
+    "require": {
+      "jmhobbs/swiftmailer-transport-aws-ses": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+          "Boru\\Ses\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Amazon SES",
+        "handle": "ses",
+        "schemaVersion": "1.0.0",
+        "hasSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://www.github.com/borucreative/craft3-ses/blob/master/CHANGELOG.md",
+        "class": "Boru\\Ses\\Plugin"
+    }
+}
