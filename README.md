@@ -12,7 +12,7 @@ Amazon Simple Email Service enables you to send and receive email using a reliab
 To install, just add the plugin to your CraftCMS 3 composer file:
 
 ```
-composer require boru/ses
+composer require borucreative/craft3-ses
 ```
 
 ## Configuring the Amazon SES Mail Transport
