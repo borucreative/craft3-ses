@@ -20,6 +20,7 @@
         }
     ],
     "require": {
+      "craftcms/cms": "^3.0.0",
       "jmhobbs/swiftmailer-transport-aws-ses": "~0.9"
     },
     "autoload": {
